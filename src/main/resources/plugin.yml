@@ -1,0 +1,36 @@
+name: LobbyPlugin
+version: '1.2'
+main: com.lobbyPlugin.LobbyPlugin
+api-version: '1.13'
+commands:
+  setlobby:
+    description: Set the lobby location
+    permission: lobbyplugin.setlobby
+  lobby:
+    description: Teleport to the lobby location
+    permission: lobbyplugin.lobby
+  l:
+    description: Teleport to the lobby location (alias for /lobby)
+    permission: lobbyplugin.lobby
+  sethub:
+    description: Set the hub location
+    permission: lobbyplugin.sethub
+  hub:
+    description: Teleport to the hub location
+    permission: lobbyplugin.hub
+permissions:
+  lobbyplugin.setlobby:
+    description: Allows a player to set the lobby location
+    default: op
+  lobbyplugin.lobby:
+    description: Allows a player to teleport to the lobby
+    default: true
+  lobbyplugin.l:
+    description: Allows a player to teleport to the lobby
+    default: true
+  lobbyplugin.sethub:
+    description: Allows a player to set the hub location
+    default: op
+  lobbyplugin.hub:
+    description: Allows a player to teleport to the hub
+    default: true
